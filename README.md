@@ -1,19 +1,18 @@
 docker-cas_mysql
 ============================
 
-```
-docker pull wnameless/cas-mysql
-```
+Based on wnameless/docker-cas_mysql
 
 Run with 22, 80, 8080, 8443 and 3306 ports opened:
 ```
 docker run -d -p 49160:22 -p 49161:80 -p 49162:8080 -p 49163:8443 -p 49164:3306 wnameless/cas-mysql
 ```
 
-Login the CAS server https://localhost:49163/cas/login with following credential:
+Login the CAS server https://localhost:49163/cas/login with following credentials:
 ```
-username: guest
-password: guest
+username: admin
+password: admin
+
 ```
 It's just a demo account. You can create more account by phpMyAdmin.
 Be aware that all passwords suppose to be hashed by MD5.
